@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="master.html" />
+
+  <head>
+    <title>Authority FX, Inc.</title>
+  </head>
+
+  <body>
+    <h2>Downloads</h2>
+
+  <div id="getting_started">
+
+    <br/>
+    Download <strong>REQURIED support file </strong><a href="${tg.url('/serve_file', params=dict(file_path='libs_win_x86-64/', file_name='libiomp5md.dll'))}">libiomp5md.dll</a> and copy to "C:\Windows\System32\"
+    <br/>
+    <br/>
+    <h3>After Effects CS5+ Windows x86-64 downloads:</h3>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='ae_win_x86-64/', file_name='afx_chroma_key.aex'))}">Chroma Key</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='ae_win_x86-64/', file_name='afx_glow.aex'))}">Glow</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='ae_win_x86-64/', file_name='afx_lens_glow.aex'))}">Lens Glow</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='ae_win_x86-64/', file_name='afx_defocus.aex'))}">Defocus</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='ae_win_x86-64/', file_name='afx_z_defocus.aex'))}">Z Defocus</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='ae_win_x86-64/', file_name='afx_soft_clip.aex'))}">Soft Clip</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='ae_win_x86-64/', file_name='afx_clamp.aex'))}">Clamp</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='ae_win_x86-64/', file_name='afx_desaturate.aex'))}">Desaturate</a></div>
+    <br/>
+    <div>1) Create a new directory called "AuthorityFX" in C:\Program Files\Adobe\Adobe After Effects CSX\Support Files\Plug-ins\Effects</div>
+    <div>2) Download purchased plugins from above and save in the newly created "AuthorityFX" plugin directory</div>
+    <div>3) Copy <strong>afx-license.dat</strong> to "AuthorityFX" plugin directory.  See <a href="${tg.url('/instructions')}">Instructions</a> on how to create a license file</div>
+    <br/>
+    <h3>Fusion 6.2+ Windows x86-64 downloads:</h3>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='fusion_win_x86-64/', file_name='afx_chroma_key.plugin'))}">Chroma Key</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='fusion_win_x86-64/', file_name='afx_glow.plugin'))}">Glow</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='fusion_win_x86-64/', file_name='afx_lens_glow.plugin'))}">Lens Glow</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='fusion_win_x86-64/', file_name='afx_defocus.plugin'))}">Defocus</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='fusion_win_x86-64/', file_name='afx_z_defocus.plugin'))}">Z Defocus</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='fusion_win_x86-64/', file_name='afx_soft_clip.plugin'))}">Soft Clip</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='fusion_win_x86-64/', file_name='afx_clamp.plugin'))}">Clamp</a></div>
+    <div><a href="${tg.url('/serve_file', params=dict(file_path='fusion_win_x86-64/', file_name='afx_desaturate.plugin'))}">Desaturate</a></div>
+    <br/>
+    <div>1) Create a new directory called "AuthorityFX" in C:\Program Files\eyeon\Fusion 6.X\Plugins\</div>
+    <div>2) Download purchased plugins and <strong>required</strong> support file libiomp5md.dll from above and copy to "AuthorityFX" plugin directory</div>
+    <div>3) Copy <strong>afx-license.dat</strong> to "AuthorityFX" plugin directory.  See <a href="${tg.url('/instructions')}">Instructions</a> on how to create a license file</div>
+
+  </div>
+
+  </body>
+</html>

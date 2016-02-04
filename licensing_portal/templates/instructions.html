@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="master.html" />
+
+  <head>
+    <title>Authority FX, Inc.</title>
+  </head>
+
+  <body>
+    <h2>Instructions</h2>
+
+  <div id="getting_started">
+    <br/>
+        <h3>
+            Redeeming a License</h3>
+        <ul>
+            <li>
+                Start by navigating to the <a href="${tg.url('/manage')}">Manage</a> page.&nbsp;</li>
+            <li>
+                First you will need to add a computer by filling out the add computer form.&nbsp; Enter a display Name for your new computer.&nbsp; Download the Authority FX &#39;<a href="${tg.url('/serve_file', params=dict(file_path='', file_name='get_mac.py'))}">Mac Address Finder</a>&#39; python script.&nbsp; Run the script and select a mac address that will be used to identify your computer.&nbsp; Paste the mac address into the field and click the &#39;Add Computer&#39; button.</li>
+            <li>
+                Now you will assign licenses to your computer.&nbsp; Use the Computer drop-down to select your computer. Then use the License drop-down to select the plugin license that you wish to assign. &nbsp;Click the &#39;Assign License&#39; button.</li>
+            <li>
+                Once you have assigned the desired plugins to your computer, you then need to look back at the &#39;Computers&#39; table where you will see &quot;Redeem&quot; in the Action field.&nbsp; Clicking &#39;Redeem&#39; will generate and serve a license file for download; however it will also lock all licenses assigned to that computer.&nbsp; This action cannot be undone without emailing plugins@authorityfx.com, so please ensure that all information and assignments are correct before you redeem your license.&nbsp; Follow the instructions on the &#39;Downloads&#39; page to install your license file and plugins.</li>
+        </ul>
+        <h3>
+            Lost or Corrupted License File</h3>
+        <ul>
+            <li>
+                If you need a replacement license file for a computer, simply navigate to the <a href="${tg.url('/manage')}">Manage</a> page and click &#39;Redeem&#39; to generate a new license.</li>
+        </ul>
+        <h3>
+            Adding Additional Plugins to an Existing Computer</h3>
+        <ul>
+            <li>
+                Adding additional licenses to an existing computer is easy.&nbsp; Simply assign your new licenses to the existing computer and redeem a new license file.&nbsp; The new license file will include all licenses assigned to the computer for which it was redeemed.&nbsp; All you need to do is replace your old &lsquo;afx-license.dat&rsquo; file with the new one.&nbsp; Refer to the &lsquo;Downloads&rsquo; page for the proper location of your license file.</li>
+        </ul>
+        <h3>
+            Hardware Change</h3>
+        <ul>
+            <li>
+                If you&rsquo;ve upgraded to a new computer please email plugins@authorityfx.com and request to have your license unlocked from the current computer.&nbsp; You will need to provide us with your login email and the computer id of the computer you wish to unlock.</li>
+        </ul>
+  </div>
+  </body>
+</html>

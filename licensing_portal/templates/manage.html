@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="master.html" />
+
+  <head>
+    <title>Authority FX, Inc.</title>
+  </head>
+
+  <body>
+    <h2>Manage</h2>
+
+  <div id="getting_started">
+    <br/>
+    <b>Licenses</b>
+    <div>${license_grid.display(license_data)}</div>
+    <br/>
+    <br/>
+    <b>Assignments</b>
+    <div>${assignment_grid.display(assignment_data)}</div>
+    <br/>
+    <div>${assignment_form.display(user_id)}</div>
+    <br/>
+    <b>Computers</b>
+    <div>${computer_grid.display(computer_data)}</div>
+    <br/>
+    <div>*If you don't know how to find your Mac address please use our python script:
+    <a href="${tg.url('/serve_file', params=dict(file_path='', file_name='get_mac.py'))}">Mac Address Finder</a></div>
+    <div>${add_computer_form.display()}</div>
+  </div>
+  </body>
+</html>

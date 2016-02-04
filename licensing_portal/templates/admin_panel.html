@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="master.html" />
+
+  <head>
+    <title>Authority FX, Inc.</title>
+  </head>
+
+  <body>
+    <h2>Admin Panel</h2>
+
+  <div id="getting_started">
+    <br/>
+    <table cellpadding="10">
+        <tr>
+            <th align="left"><u>Add New User</u></th>
+            <th align="left"></th>
+            <th align="left"><u>Assign Licenses to User</u></th>
+        </tr>
+        <tr>
+            <td valign="top">${create_user_form.display(data)}</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td valign="top">${assign_licences_form.display(data)}</td>
+        </tr>
+    </table>
+
+    <form action="${tg.url('/admin_panel', params=dict())}" method="post" accept-charset="UTF-8">
+    <table>
+        <tr>
+            <td><label>Email</label><input type="text" name="email_filter" value='$data.email_filter' onChange="javascript:this.value=this.value.toLowerCase();"></input></td>
+            <td><label>User id</label><input type="number" name="id_filter" value='$data.id_filter'></input></td>
+            <td><input class="btn" type="submit" id="submit" value="Filter"></input></td>
+        </tr>
+    </table>
+    </form>
+    <b>Licenses</b>
+    <div>${admin_license_grid.display(admin_license_data)}</div>
+    <br/>
+    <b>Computers</b>
+    <div>${admin_computer_grid.display(admin_computer_data)}</div>
+
+  </div>
+  </body>
+</html>

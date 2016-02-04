@@ -1,0 +1,4 @@
+recursive-include licensing_portal/public *
+include licensing_portal/public/favicon.ico
+recursive-include licensing_portal/i18n *
+recursive-include licensing_portal/templates *
